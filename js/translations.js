@@ -47,7 +47,7 @@ const translations = {
     "gallery_subtitle": "Real screenshots captured directly from Octo Black running on Android.",
     "cap_1": "Sleek Dark Home Screen & System Carousel",
     "cap_2": "Game Details, Artwork & Options",
-    "cap_3": "Full Library Scanner & Core Configuration",
+    "cap_3": "Image from inside one of the games",
 
     // Download Section
     "home_dl_title": "Ready to Play Your Classics?",
