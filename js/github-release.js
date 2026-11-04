@@ -65,7 +65,7 @@
         releaseVersionText.textContent = 'v1.0.0';
       }
       if (releaseSizeText) {
-        releaseSizeText.textContent = '~45 MB';
+        releaseSizeText.textContent = '~170 MB';
       }
       downloadBtns.forEach(btn => {
         if (!btn.getAttribute('href') || btn.getAttribute('href') === '#') {
