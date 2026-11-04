@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Octo Black</title>
+  <meta name="description" content="Privacy Policy for the Octo Black Android app: what data is accessed, what is stored, and what is never collected.">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="privacy.html">
+
+  <link rel="icon" type="image/png" href="assets/systems_logos/my_logo/octoblack-logo.png">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Header / Navigation Bar -->
+  <header class="navbar-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" aria-label="Octo Black Home">
+        <img src="assets/systems_logos/my_logo/octoblack-logo.png" alt="Octo Black Logo" width="36" height="36">
+        <span>OCTO BLACK</span>
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="index.html" class="nav-link" data-i18n="nav_home">Home</a>
+        <a href="features.html" class="nav-link" data-i18n="nav_features">Features</a>
+        <a href="systems.html" class="nav-link" data-i18n="nav_systems">Supported Systems</a>
+        <a href="download.html" class="nav-link" data-i18n="nav_download">Download</a>
+        <a href="changelog.html" class="nav-link" data-i18n="nav_changelog">Changelog</a>
+        <a href="faq.html" class="nav-link" data-i18n="nav_faq">FAQ</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="lang-btn" aria-label="Switch Language">
+          <span class="lang-btn-text">عربي</span>
+        </button>
+        <a href="download.html" class="btn btn-primary btn-sm github-dl-link" data-i18n="btn_download_apk">Download APK</a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Page Header -->
+    <section class="section" style="padding-top: calc(var(--header-height) + 3rem); padding-bottom: 2rem;">
+      <div class="container">
+        <div class="section-header">
+          <h1 class="section-title">Privacy Policy</h1>
+          <p class="section-subtitle">Last updated: November 5, 2026 — Octo Black for Android (version 1.0.0).</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Policy Content -->
+    <section class="section" style="padding-top: 0;">
+      <div class="container" style="max-width: 820px;">
+        <div class="card" style="padding: 2rem;">
+          <p style="margin-bottom: 1.25rem; line-height: 1.8;">
+            This Privacy Policy explains how the <strong>Octo Black</strong> Android
+            application ("the app", "we") handles information. Octo Black is a
+            self-contained emulator frontend: it runs on your device, and your game
+            library never leaves it unless you choose to fetch artwork.
+          </p>
+
+          <h2 class="footer-title" style="margin-top: 2rem;">1. Information we do NOT collect</h2>
+          <p style="line-height: 1.8;">
+            Octo Black has <strong>no account system, no analytics, no advertising
+            SDKs, and no crash-reporting or tracking tools</strong>. We do not
+            collect, transmit, sell, or share any of the following:
+          </p>
+          <ul style="line-height: 1.9; padding-inline-start: 1.4rem; margin-bottom: 1rem;">
+            <li>Your name, email address, or any contact details (there is no sign-up).</li>
+            <li>Your device ID, advertising ID, phone number, or contacts.</li>
+            <li>Your location, camera, microphone, or call information (the app never requests these permissions).</li>
+            <li>Your files: ROMs, saved games, screenshots, and settings remain in the app's private storage or the folder you selected.</li>
+            <li>Your play history or usage statistics — nothing is telemetered.</li>
+          </ul>
+
+          <h2 class="footer-title" style="margin-top: 2rem;">2. Permissions the app uses</h2>
+          <ul style="line-height: 1.9; padding-inline-start: 1.4rem; margin-bottom: 1rem;">
+            <li><strong>Internet access</strong> — used only to check for app updates and to download game cover artwork and screenshots you see in your library.</li>
+            <li><strong>Network state</strong> — used only to know whether a connection is available before making those optional requests.</li>
+            <li><strong>Storage / file access</strong> — used only to list and open the game folder <em>you</em> pick with the system file chooser. Octo Black does not read other files on your device.</li>
+          </ul>
+
+          <h2 class="footer-title" style="margin-top: 2rem;">3. Network requests the app makes</h2>
+          <p style="line-height: 1.8; margin-bottom: 0.75rem;">
+            When the app needs artwork or checks for a newer version, it sends the
+            following requests. Only non-personal, technical data is involved:
+          </p>
+          <ul style="line-height: 1.9; padding-inline-start: 1.4rem; margin-bottom: 1rem;">
+            <li><strong>Game artwork lookup</strong> — the game title and system name are sent to our
+              own backend (an OctoBlack Cloudflare Worker) which retrieves cover images and
+              screenshots. That backend holds the third-party metadata credentials, so
+              <em>your request is not sent to the metadata provider directly and no secret is stored on your device</em>.</li>
+            <li><strong>Update check</strong> — a request to our Supabase backend asking for the
+              latest published release number, so the app can optionally show you an
+              "Update available" prompt. No identifiers are attached to this request.</li>
+          </ul>
+          <p style="line-height: 1.8;">
+            We do not build profiles, and these requests cannot be linked to you as an
+            individual: no cookies, no local storage identifiers, and no login tokens
+            are used by the app.
+          </p>
+
+          <h2 class="footer-title" style="margin-top: 2rem;">4. Local storage on your device</h2>
+          <p style="line-height: 1.8;">
+            Settings, library data, and downloaded artwork images are stored in the
+            app's private storage and in Android's SharedPreferences on your device.
+            This data is never uploaded. Clearing the app's data or uninstalling the
+            app removes all of it.
+          </p>
+
+          <h2 class="footer-title" style="margin-top: 2rem;">5. Third-party services</h2>
+          <p style="line-height: 1.8;">
+            Two services are contacted, both strictly for functionality described
+            above, and neither receives personal information about you:
+          </p>
+          <ul style="line-height: 1.9; padding-inline-start: 1.4rem; margin-bottom: 1rem;">
+            <li><strong>Supabase</strong> — serves the app's release version list (update check).</li>
+            <li><strong>Cloudflare (OctoBlack Worker)</strong> — proxies game artwork requests.</li>
+          </ul>
+          <p style="line-height: 1.8;">
+            The app contains no advertising networks, no analytics providers, and no
+            third-party SDKs beyond the Flutter framework itself.
+          </p>
+
+          <h2 class="footer-title" style="margin-top: 2rem;">6. Children's privacy</h2>
+          <p style="line-height: 1.8;">
+            The app does not collect any information from anyone, including children.
+            Because no personal data is processed, it complies with COPPA requirements
+            by design.
+          </p>
+
+          <h2 class="footer-title" style="margin-top: 2rem;">7. Your choices and control</h2>
+          <ul style="line-height: 1.9; padding-inline-start: 1.4rem; margin-bottom: 1rem;">
+            <li>You can turn off automatic artwork downloads at any time in
+              <em>Settings → Network &amp; Connection</em>.</li>
+            <li>You can deny network access entirely (offline mode) — the app still works;
+              artwork and update checks are simply skipped.</li>
+            <li>You can delete all stored data by clearing the app's storage in Android settings.</li>
+          </ul>
+
+          <h2 class="footer-title" style="margin-top: 2rem;">8. Changes to this policy</h2>
+          <p style="line-height: 1.8;">
+            If the app ever starts handling data differently, this page will be updated
+            with a new "Last updated" date before or at the time of the corresponding
+            app release.
+          </p>
+
+          <h2 class="footer-title" style="margin-top: 2rem;">9. Contact</h2>
+          <p style="line-height: 1.8;">
+            Questions about this policy? Open an issue on the project repository:
+            <a href="https://github.com/REPLACE-WITH-YOUR-GITHUB-USERNAME/octoblackemulatorgames" rel="noopener">github.com/REPLACE-WITH-YOUR-GITHUB-USERNAME/octoblackemulatorgames</a>
+            or use the contact links on the <a href="index.html">home page</a>.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo">
+            <img src="assets/systems_logos/my_logo/octoblack-logo.png" alt="Octo Black Logo" width="32" height="32">
+            <span>OCTO BLACK</span>
+          </a>
+          <p data-i18n="footer_brand_desc">Octo Black is a premium unified Android emulator frontend bringing your classic retro gaming collection together.</p>
+        </div>
+
+        <div>
+          <h4 class="footer-title" data-i18n="footer_heading_navigation">Navigation</h4>
+          <div class="footer-links">
+            <a href="index.html" data-i18n="nav_home">Home</a>
+            <a href="features.html" data-i18n="nav_features">Features</a>
+            <a href="systems.html" data-i18n="nav_systems">Supported Systems</a>
+            <a href="download.html" data-i18n="nav_download">Download</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title" data-i18n="footer_heading_project">Project Info</h4>
+          <div class="footer-links">
+            <a href="changelog.html" data-i18n="nav_changelog">Changelog</a>
+            <a href="faq.html" data-i18n="nav_faq">FAQ</a>
+            <a href="privacy.html" class="active">Privacy Policy</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div data-i18n="footer_copyright">© 2026 Octo Black. All rights reserved. Open source retro gaming frontend for Android.</div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/translations.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
