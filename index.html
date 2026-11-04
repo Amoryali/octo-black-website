@@ -1,31 +1,326 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#101114">
-  <title>Octo Black</title>
-  <style>
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      min-height: 100vh;
-      display: grid;
-      place-items: center;
-      background: #101114;
-      color: #f5f5f5;
-      font-family: Arial, sans-serif;
-      text-align: center;
-    }
-    main { padding: 24px; }
-    h1 { font-size: 48px; margin-bottom: 12px; }
-    p { color: #aaa; }
-  </style>
+  <title>Octo Black — Official Unified Retro Gaming Frontend for Android</title>
+  <meta name="description" content="Bring your classic retro gaming collection together with Octo Black v1.0.0. A unified Android frontend powered by high-performance Libretro cores.">
+  <meta name="keywords" content="Octo Black, Android Emulator, Retro Gaming, Libretro, PS1 Emulator, GBA Emulator, N64 Emulator, PSP Emulator, Android Frontend">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Octo Black — Official Unified Retro Gaming Frontend">
+  <meta property="og:description" content="Bring your classic retro gaming collection together with Octo Black. Unified Android frontend for NES, SNES, N64, PS1, GBA, PSP, and NDS.">
+  <meta property="og:image" content="assets/images/introduction_images/1.png">
+  <meta property="og:url" content="https://octoblack.app/">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Octo Black — Official Unified Retro Gaming Frontend">
+  <meta name="twitter:description" content="Unified Android retro gaming experience powered by high-performance Libretro cores.">
+  <meta name="twitter:image" content="assets/images/introduction_images/1.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/systems_logos/my_logo/octoblack-logo.png">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
+  <!-- Header / Navigation Bar -->
+  <header class="navbar-header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand-logo" aria-label="Octo Black Home">
+        <img src="assets/systems_logos/my_logo/octoblack-logo.png" alt="Octo Black Logo" width="36" height="36">
+        <span>OCTO BLACK</span>
+      </a>
+
+      <nav class="nav-menu" id="navMenu">
+        <a href="index.html" class="nav-link active" data-i18n="nav_home">Home</a>
+        <a href="features.html" class="nav-link" data-i18n="nav_features">Features</a>
+        <a href="systems.html" class="nav-link" data-i18n="nav_systems">Supported Systems</a>
+        <a href="download.html" class="nav-link" data-i18n="nav_download">Download</a>
+        <a href="changelog.html" class="nav-link" data-i18n="nav_changelog">Changelog</a>
+        <a href="faq.html" class="nav-link" data-i18n="nav_faq">FAQ</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="lang-btn" aria-label="Switch Language">
+          <span class="lang-btn-text">عربي</span>
+        </button>
+        <a href="download.html" class="btn btn-primary btn-sm github-dl-link" data-i18n="btn_download_apk">Download APK</a>
+        <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
   <main>
-    <h1>OCTO BLACK</h1>
-    <p>Coming Soon</p>
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-tag">
+            <span class="badge badge-status-supported" id="releaseStatusBadge">v1.0.0 Official Release</span>
+          </div>
+          <h1 class="hero-title" data-i18n="hero_title">YOUR RETRO WORLD. ONE EXPERIENCE.</h1>
+          <p class="hero-description" data-i18n="hero_desc">
+            Bring your classic gaming collection together with Octo Black, a unified Android retro gaming experience powered by high-performance Libretro cores.
+          </p>
+          <div class="hero-actions">
+            <a href="download.html" class="btn btn-primary github-dl-link" data-i18n="hero_btn_download">Download Octo Black v1.0.0</a>
+            <a href="features.html" class="btn btn-secondary" data-i18n="hero_btn_explore">Explore Features</a>
+          </div>
+        </div>
+
+        <div class="hero-preview">
+          <div class="landscape-mockup-container">
+            <div class="screen-content-wrapper">
+              <div class="screen-slider" id="screenSlider">
+                <img src="assets/images/introduction_images/1.png" alt="Octo Black Interface 1" class="screen-slide" loading="eager">
+                <img src="assets/images/introduction_images/2.png" alt="Octo Black Interface 2" class="screen-slide" loading="lazy">
+                <img src="assets/images/introduction_images/3.png" alt="Octo Black Interface 3" class="screen-slide" loading="lazy">
+              </div>
+            </div>
+            <div class="slider-controls">
+              <span class="slider-dot active"></span>
+              <span class="slider-dot"></span>
+              <span class="slider-dot"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Overview Section -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title" data-i18n="home_features_title">Built for Pure Gaming</h2>
+          <p class="section-subtitle" data-i18n="home_features_subtitle">Engineered with precision for seamless emulation, sleek media organization, and zero clutter.</p>
+        </div>
+
+        <div class="grid-cards">
+          <div class="card">
+            <div class="card-icon">⚡</div>
+            <h3 class="card-title" data-i18n="feat_1_title">Unified Core Architecture</h3>
+            <p class="card-text" data-i18n="feat_1_desc">Seamlessly emulates NES, SNES, N64, PlayStation, Game Boy Advance, PSP, and NDS powered by optimized native Libretro cores.</p>
+          </div>
+
+          <div class="card">
+            <div class="card-icon">🔍</div>
+            <h3 class="card-title" data-i18n="feat_2_title">Automatic ROM Scanner</h3>
+            <p class="card-text" data-i18n="feat_2_desc">Scans your storage for retro game dumps, matching metadata, serial numbers, cover artwork, and system categories automatically.</p>
+          </div>
+
+          <div class="card">
+            <div class="card-icon">🛠️</div>
+            <h3 class="card-title" data-i18n="feat_3_title">Integrated CWCheat Engine</h3>
+            <p class="card-text" data-i18n="feat_3_desc">Built-in CWCheat database with manual cheat code entry support for all integrated cores.</p>
+          </div>
+
+          <div class="card">
+            <div class="card-icon">🎮</div>
+            <h3 class="card-title" data-i18n="feat_4_title">Custom Virtual Touch Gamepad</h3>
+            <p class="card-text" data-i18n="feat_4_desc">Fully customizable touch controls with editor, analog throttling, and physical bluetooth gamepad auto-mapping.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Supported Systems Strip Section -->
+    <section class="section" style="background-color: var(--bg-obsidian);">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title" data-i18n="home_systems_title">Supported Retro Systems</h2>
+          <p class="section-subtitle" data-i18n="home_systems_subtitle">Explore runtime-verified systems and planned platforms in our catalog.</p>
+        </div>
+
+        <div class="systems-grid">
+          <!-- NES -->
+          <div class="system-card">
+            <div class="system-card-header">
+              <img src="assets/systems_logos/Consoles/Nintendo Entertainment System.png" alt="NES Logo" class="system-logo" loading="lazy">
+              <span class="badge badge-status-supported">Verified</span>
+            </div>
+            <h3 class="system-name">Nintendo (NES)</h3>
+            <div class="system-engine">Core: fceumm</div>
+            <p class="system-desc">Classic 8-bit Nintendo console — fully verified on device.</p>
+          </div>
+
+          <!-- SNES -->
+          <div class="system-card">
+            <div class="system-card-header">
+              <img src="assets/systems_logos/Consoles/Super Nintendo Entertainment System.png" alt="SNES Logo" class="system-logo" loading="lazy">
+              <span class="badge badge-status-supported">Verified</span>
+            </div>
+            <h3 class="system-name">Super Nintendo</h3>
+            <div class="system-engine">Core: Snes9x</div>
+            <p class="system-desc">16-bit Nintendo classic — gameplay verified on device.</p>
+          </div>
+
+          <!-- N64 -->
+          <div class="system-card">
+            <div class="system-card-header">
+              <img src="assets/systems_logos/Consoles/Nintendo 64.png" alt="N64 Logo" class="system-logo" loading="lazy">
+              <span class="badge badge-status-supported">Verified</span>
+            </div>
+            <h3 class="system-name">Nintendo 64</h3>
+            <div class="system-engine">Core: Mupen64Plus-Next</div>
+            <p class="system-desc">3D 64-bit console — GLES3 hardware accelerated emulation.</p>
+          </div>
+
+          <!-- PS1 -->
+          <div class="system-card">
+            <div class="system-card-header">
+              <img src="assets/systems_logos/Consoles/Sony Playstation.png" alt="PS1 Logo" class="system-logo" loading="lazy">
+              <span class="badge badge-status-supported">Verified</span>
+            </div>
+            <h3 class="system-name">PlayStation</h3>
+            <div class="system-engine">Core: PCSX ReARMed</div>
+            <p class="system-desc">Original PlayStation — 32-bit disc emulation with cue/bin support.</p>
+          </div>
+
+          <!-- GBA -->
+          <div class="system-card">
+            <div class="system-card-header">
+              <img src="assets/systems_logos/Handhelds/Nintendo Game Boy Advance.png" alt="GBA Logo" class="system-logo" loading="lazy">
+              <span class="badge badge-status-supported">Verified</span>
+            </div>
+            <h3 class="system-name">Game Boy Advance</h3>
+            <div class="system-engine">Core: mGBA</div>
+            <p class="system-desc">Portable 32-bit Game Boy Advance — full speed execution.</p>
+          </div>
+
+          <!-- PSP -->
+          <div class="system-card">
+            <div class="system-card-header">
+              <img src="assets/systems_logos/Handhelds/Sony PSP.png" alt="PSP Logo" class="system-logo" loading="lazy">
+              <span class="badge badge-status-supported">Verified</span>
+            </div>
+            <h3 class="system-name">PlayStation Portable</h3>
+            <div class="system-engine">Core: PPSSPP</div>
+            <p class="system-desc">Sony PSP — verified high performance on arm64 devices.</p>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 3rem;">
+          <a href="systems.html" class="btn btn-outline" data-i18n="nav_systems">View All Supported Systems</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- App Screenshot Gallery Section -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title" data-i18n="gallery_title">Official App Interface</h2>
+          <p class="section-subtitle" data-i18n="gallery_subtitle">Real screenshots captured directly from Octo Black running on Android.</p>
+        </div>
+
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <img src="assets/images/introduction_images/1.png" alt="Octo Black Home Interface" loading="lazy">
+            <div class="gallery-caption" data-i18n="cap_1">Sleek Dark Home Screen & System Carousel</div>
+          </div>
+          <div class="gallery-item">
+            <img src="assets/images/introduction_images/2.png" alt="Octo Black Game Details" loading="lazy">
+            <div class="gallery-caption" data-i18n="cap_2">Game Details, Artwork & Options</div>
+          </div>
+          <div class="gallery-item">
+            <img src="assets/images/introduction_images/3.png" alt="Octo Black Library Settings" loading="lazy">
+            <div class="gallery-caption" data-i18n="cap_3">Full Library Scanner & Core Configuration</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Download Section -->
+    <section class="section" style="background-color: var(--bg-obsidian);">
+      <div class="container">
+        <div class="download-card">
+          <div class="download-version-tag">
+            <span id="releaseVersionTag">v1.0.0</span> • <span id="releaseFileSize">~170 MB</span>
+          </div>
+          <h2 class="download-title" data-i18n="home_dl_title">Ready to Play Your Classics?</h2>
+          <p class="download-desc" data-i18n="home_dl_desc">Download Octo Black v1.0.0 for Android (ARM64). Free, lightweight, and pre-configured for instant retro gaming.</p>
+          <a href="download.html" class="btn btn-primary github-dl-link" data-i18n="hero_btn_download">Download Octo Black v1.0.0</a>
+
+          <div class="download-details-meta">
+            <div><strong data-i18n="dl_req_title">System Requirements:</strong> <span data-i18n="dl_req_desc">Android 8.0 (Oreo) or higher • 64-bit ARM CPU</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand-logo">
+            <img src="assets/systems_logos/my_logo/octoblack-logo.png" alt="Octo Black Logo" width="32" height="32">
+            <span>OCTO BLACK</span>
+          </a>
+          <p data-i18n="footer_brand_desc">Octo Black is a premium unified Android emulator frontend bringing your classic retro gaming collection together.</p>
+          <div class="footer-socials">
+            <a href="https://github.com/OctoBlack/octoblackemulatorgames" target="_blank" rel="noopener" class="social-icon-btn" aria-label="GitHub">
+              <img src="assets/social_icons/github.svg" alt="GitHub">
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="Instagram">
+              <img src="assets/social_icons/instagram.svg" alt="Instagram">
+            </a>
+            <a href="https://youtube.com" target="_blank" rel="noopener" class="social-icon-btn" aria-label="YouTube">
+              <img src="assets/social_icons/youtube.svg" alt="YouTube">
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title" data-i18n="footer_heading_navigation">Navigation</h4>
+          <div class="footer-links">
+            <a href="index.html" data-i18n="nav_home">Home</a>
+            <a href="features.html" data-i18n="nav_features">Features</a>
+            <a href="systems.html" data-i18n="nav_systems">Supported Systems</a>
+            <a href="download.html" data-i18n="nav_download">Download</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title" data-i18n="footer_heading_systems">Systems</h4>
+          <div class="footer-links">
+            <a href="systems.html">PlayStation (PS1)</a>
+            <a href="systems.html">Nintendo 64 (N64)</a>
+            <a href="systems.html">Game Boy Advance</a>
+            <a href="systems.html">PSP & Nintendo DS</a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-title" data-i18n="footer_heading_project">Project Info</h4>
+          <div class="footer-links">
+            <a href="changelog.html" data-i18n="nav_changelog">Changelog</a>
+            <a href="faq.html" data-i18n="nav_faq">FAQ</a>
+            <a href="https://github.com/OctoBlack/octoblackemulatorgames" target="_blank" rel="noopener" data-i18n="footer_link_github">GitHub Repository</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div data-i18n="footer_copyright">© 2026 Octo Black. All rights reserved. Open source retro gaming frontend for Android.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- JavaScript Scripts -->
+  <script src="js/translations.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/github-release.js"></script>
 </body>
 </html>
