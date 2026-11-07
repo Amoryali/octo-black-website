@@ -1094,17 +1094,55 @@ ul {
   }
 }
 
+/* --------------------------------------------------------------------------
+   13. Subtle, consistent interaction motion
+   -------------------------------------------------------------------------- */
+:root {
+  --motion-duration: 220ms;
+  --motion-ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+.btn,
+.card,
+.system-card,
+.gallery-item,
+.filter-btn,
+.slider-dot {
+  transition-duration: var(--motion-duration);
+  transition-timing-function: var(--motion-ease);
+}
+
+.btn:active,
+.filter-btn:active {
+  transform: scale(0.98);
+}
+
+.card:hover {
+  transform: translateY(-3px);
+}
+
+.gallery-item:hover {
+  transform: translateY(-3px);
+}
+
+.gallery-item img {
+  transition: transform 300ms var(--motion-ease);
+}
+
+.gallery-item:hover img {
+  transform: scale(1.025);
+}
+
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
+    animation: none !important;
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
 }
 
 /* --------------------------------------------------------------------------
-   13. Standard Cursor Styling
+   14. Standard Cursor Styling
    -------------------------------------------------------------------------- */
 html, body {
   cursor: default;
