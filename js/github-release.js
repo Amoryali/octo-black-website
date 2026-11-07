@@ -25,7 +25,7 @@
       }
 
       const releaseData = await response.json();
-      const tagName = releaseData.tag_name || 'v1.0.0';
+      const tagName = releaseData.tag_name || 'v1.0.1';
 
       // Find APK asset in assets list
       let apkAsset = null;
@@ -34,7 +34,7 @@
       }
 
       const downloadUrl = apkAsset ? apkAsset.browser_download_url : releaseData.html_url;
-      const fileSize = apkAsset ? (apkAsset.size / (1024 * 1024)).toFixed(1) + ' MB' : '~45 MB';
+      const fileSize = apkAsset ? (apkAsset.size / (1024 * 1024)).toFixed(1) + ' MB' : '~150 MB';
 
       // Update UI elements if present
       if (statusBadge) {
@@ -56,16 +56,16 @@
       });
 
     } catch (error) {
-      console.log('GitHub Release API Check: Using default v1.0.0 release specs.', error.message);
-      // Fallback state: Set default v1.0.0 values without breaking UI
+      console.log('GitHub Release API Check: Using default v1.0.1 release specs.', error.message);
+      // Fallback state: Set default v1.0.1 values without breaking UI
       if (statusBadge) {
-        statusBadge.textContent = 'v1.0.0 - Stable Release';
+        statusBadge.textContent = 'v1.0.1 - Stable Release';
       }
       if (releaseVersionText) {
-        releaseVersionText.textContent = 'v1.0.0';
+        releaseVersionText.textContent = 'v1.0.1';
       }
       if (releaseSizeText) {
-        releaseSizeText.textContent = '~170 MB';
+        releaseSizeText.textContent = '~150 MB';
       }
       downloadBtns.forEach(btn => {
         if (!btn.getAttribute('href') || btn.getAttribute('href') === '#') {
