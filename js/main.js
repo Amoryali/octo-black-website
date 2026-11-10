@@ -26,48 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 2. Monitor Frame Screen Slider
-  const slider = document.getElementById('screenSlider');
-  const dots = document.querySelectorAll('.slider-dot');
-  const slides = document.querySelectorAll('.screen-slide');
-  if (slider && dots.length > 0) {
-    let currentSlide = 0;
-    const totalSlides = dots.length;
-
-    function goToSlide(index) {
-      currentSlide = index;
-      const isRtl = document.documentElement.getAttribute('dir') === 'rtl';
-      const offset = isRtl ? index * 100 : -index * 100;
-      slider.style.transform = `translateX(${offset}%)`;
-
-      dots.forEach((dot, i) => {
-        dot.classList.toggle('active', i === currentSlide);
-      });
-
-      slides.forEach((slide, i) => {
-        slide.classList.toggle('active-slide', i === currentSlide);
-      });
-    }
-
-    dots.forEach((dot, i) => {
-      dot.addEventListener('click', () => goToSlide(i));
-    });
-
-    // Initialize first slide active state
-    goToSlide(0);
-
-    // Auto rotate every 4 seconds
-    setInterval(() => {
-      goToSlide((currentSlide + 1) % totalSlides);
-    }, 4000);
-
-    // Re-align slide if language direction changes
-    window.addEventListener('languageChanged', () => {
-      goToSlide(currentSlide);
-    });
-  }
-
-  // 3. Systems Filter Chips (Systems Page)
+  // 2. Systems Filter Chips (Systems Page)
   const filterBtns = document.querySelectorAll('.filter-btn');
   const systemCards = document.querySelectorAll('.system-card');
 
@@ -90,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 4. Accordion Toggle (FAQ Page)
+  // 3. Accordion Toggle (FAQ Page)
   const accordionItems = document.querySelectorAll('.accordion-item');
   if (accordionItems.length > 0) {
     accordionItems.forEach(item => {
@@ -109,9 +68,87 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // 5. Update Copyright Year dynamically
+  // 4. Update Copyright Year dynamically
   const yearEl = document.getElementById('currentYear');
   if (yearEl) {
     yearEl.textContent = new Date().getFullYear();
   }
+
+  // 5. Scroll reveal — the .reveal class is applied by this script only, so
+  //    the page stays fully visible if JavaScript is unavailable.
+  const revealTargets = document.querySelectorAll(
+    '.section-header, .card, .system-card, .gallery-item, .timeline-item, ' +
+    '.download-card, .accordion-item, .store-badges'
+  );
+  if (revealTargets.length > 0) {
+    if ('IntersectionObserver' in window) {
+      const revealObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+      revealTargets.forEach(target => {
+        target.classList.add('reveal');
+        revealObserver.observe(target);
+      });
+    } else {
+      revealTargets.forEach(target => target.classList.add('is-visible'));
+    }
+  }
+
+  // 6. Sticky header state + scroll progress bar + back-to-top button.
+  //    The two UI elements are injected so every page gets them without
+  //    duplicating markup.
+  const navbar = document.querySelector('.navbar-header');
+
+  const progressBar = document.createElement('div');
+  progressBar.className = 'scroll-progress';
+  progressBar.setAttribute('aria-hidden', 'true');
+  document.body.appendChild(progressBar);
+
+  const backToTop = document.createElement('button');
+  backToTop.type = 'button';
+  backToTop.className = 'back-to-top';
+  backToTop.innerHTML =
+    '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" ' +
+    'stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">' +
+    '<polyline points="18 15 12 9 6 15"></polyline></svg>';
+  document.body.appendChild(backToTop);
+
+  function applyBackToTopLabel() {
+    const lang = window.OctoI18n ? window.OctoI18n.getCurrentLang() : 'en';
+    const dictionary = (window.translations && window.translations[lang]) || {};
+    const label = dictionary.ui_back_to_top || 'Back to top';
+    backToTop.setAttribute('aria-label', label);
+    backToTop.title = label;
+  }
+  applyBackToTopLabel();
+  window.addEventListener('languageChanged', applyBackToTopLabel);
+
+  backToTop.addEventListener('click', () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  function handleScroll() {
+    const scrollTop =
+      document.documentElement.scrollTop || document.body.scrollTop || 0;
+    const scrollable =
+      document.documentElement.scrollHeight -
+      document.documentElement.clientHeight;
+    const progress = scrollable > 0 ? (scrollTop / scrollable) * 100 : 0;
+    progressBar.style.width = progress + '%';
+
+    backToTop.classList.toggle('is-visible', scrollTop > 400);
+
+    if (navbar) {
+      navbar.classList.toggle('is-scrolled', scrollTop > 8);
+    }
+  }
+
+  window.addEventListener('scroll', handleScroll, { passive: true });
+  handleScroll();
 });

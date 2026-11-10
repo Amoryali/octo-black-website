@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://octoblack.app/sitemap.xml

@@ -16,10 +16,10 @@ window.translations = {
     "lang_switch_label": "Arabic",
 
     // Hero Section
-    "hero_tag": "Octo Black v1.0.1 Official Release",
+    "hero_tag": "Octo Black v1.0.3 Official Release",
     "hero_title": "YOUR RETRO WORLD. ONE EXPERIENCE.",
     "hero_desc": "Bring your classic gaming collection together with Octo Black, a unified Android retro gaming experience powered by high-performance Libretro cores.",
-    "hero_btn_download": "Download Octo Black v1.0.1",
+    "hero_btn_download": "Download Octo Black v1.0.3",
     "hero_btn_explore": "Explore Features",
 
     // Home Features Overview
@@ -52,9 +52,9 @@ window.translations = {
 
     // Download Section
     "home_dl_title": "Ready to Play Your Classics?",
-    "home_dl_desc": "Download Octo Black v1.0.1 for Android (ARM64). Free, lightweight, and pre-configured for instant retro gaming.",
+    "home_dl_desc": "Download Octo Black v1.0.3 for Android (ARM64). Free, lightweight, and pre-configured for instant retro gaming.",
     "dl_status_label": "Official GitHub Release Status:",
-    "dl_status_active": "v1.0.1 Available for Download",
+    "dl_status_active": "v1.0.3 Available for Download",
     "dl_req_title": "System Requirements:",
     "dl_req_desc": "Android 8.0 (Oreo) or higher • 64-bit ARM CPU (arm64-v8a)",
 
@@ -73,12 +73,12 @@ window.translations = {
     // Download Page Detailed
     "page_dl_title": "Official Download",
     "page_dl_subtitle": "Get the latest official Octo Black APK build directly from our GitHub Releases.",
-    "dl_card_version": "Version 1.0.1 (Build 2)",
+    "dl_card_version": "Version 1.0.3 (Build 4)",
     "dl_card_date": "Released: Official Stable Build",
     "dl_card_arch": "Architecture: arm64-v8a",
-    "dl_card_btn": "Download Octo Black v1.0.1 APK",
+    "dl_card_btn": "Download Octo Black v1.0.3 APK",
     "dl_install_guide_title": "How to Install on Android",
-    "step_1": "1. Download the octo-black-1.0.1v-arm64-v8a.apk file to your Android device.",
+    "step_1": "1. Download the octo-black-1.0.3v-arm64-v8a.apk file to your Android device.",
     "step_2": "2. Open the downloaded file using your browser or file manager.",
     "step_3": "3. Allow installation from unknown sources if prompted by Android.",
     "step_4": "4. Launch Octo Black and grant storage access to scan your ROM collection.",
@@ -97,12 +97,35 @@ window.translations = {
 
     // v1.0.1 release notes
     "v101_title": "v1.0.1 — Dreamcast Widescreen & Controls Update",
-    "v101_date": "Current Release",
+    "v101_date": "Released: Early November 2026",
     "v101_item_1": "New — 16:9 widescreen mode for Dreamcast games, fitted perfectly to modern phone screens.",
     "v101_item_2": "Fixed — on-screen controller buttons for Dreamcast now respond correctly: START, A, and D-pad.",
     "v101_item_3": "Improved — overall stability and performance across all supported systems.",
     "v101_item_4": "Updated — version information and download files to v1.0.1 (build 2).",
     "v101_item_5": "Website — improved the bilingual changelog and fixed the Arabic/English language switcher.",
+
+    // v1.0.2 release notes
+    "v102_title": "v1.0.2 — Cheat Codes Redesign & Touch Layout Editor",
+    "v102_date": "Previous Release",
+    "v102_item_1": "New — a pencil button inside the gameplay screen pauses the emulator, opens the touch control layout editor, then resumes play from where it stopped.",
+    "v102_item_2": "New — redesigned Cheat Codes screen with search, All/Active filters, an active counter, unified switches, Database and My Cheats sections, expandable code lines, and edit/delete for manual cheats with confirmation.",
+    "v102_item_3": "Improved — both controller shoulder buttons unified into one symmetric position, with the default corner layout restored like classic consoles.",
+    "v102_item_4": "Improved — library header and sorting options, plus removed the black backing from game cover artwork.",
+    "v102_item_5": "Fixed — LateInitializationError when reloading runtime settings.",
+    "v102_item_6": "Translation — full Arabic coverage for the cheat screens and the gameplay quick menu.",
+    "v102_item_7": "New — the game covers are now a new 3D box style.",
+
+    // v1.0.3 release notes
+    "v103_title": "v1.0.3 — Nintendo Wii & Dolphin Update",
+    "v103_date": "Current Release",
+    "v103_item_1": "New — Nintendo Wii support via the official Dolphin Libretro core (arm64), with system files (Sys) extracted automatically on first launch — no BIOS required.",
+    "v103_item_8": "Note — the Dolphin (Nintendo Wii) emulator does not work yet; it has only been added to the app and will be enabled in a future update.",
+    "v103_item_2": "New — Nintendo Wii now appears on the home screen system strip.",
+    "v103_item_3": "Improved — smarter ROM scanner: .wbfs/.gcz/.rvz/.wia/.ciso and .nkit.iso files are classified automatically, while ambiguous .iso files are identified only by a [Wii] token in the file name (never the folder name) so PSP dumps are never mislabeled.",
+    "v103_item_4": "Fixed — previously saved ROM entries are re-classified correctly (e.g. .nkit.iso files stuck as Unknown).",
+    "v103_item_5": "Fixed — Dolphin system files (Sys) now extract to the correct path on first launch.",
+    "v103_item_6": "Improved — redesigned Developer card in Settings with a new WhatsApp contact button.",
+    "v103_item_7": "Updated — version information and download files to v1.0.3 (build 4).",
 
     // FAQ Page
     "page_faq_title": "Frequently Asked Questions",
@@ -117,6 +140,19 @@ window.translations = {
     "faq_a4": "Yes, Octo Black automatically maps standard Bluetooth and USB gamepads (Xbox, PlayStation, Ipega, etc.).",
     "faq_q5": "Are cheat codes supported?",
     "faq_a5": "Yes, Octo Black includes a bundled CWCheat database and supports manual cheat code entry for integrated cores.",
+
+    // Store Badges (Download Page)
+    "dl_stores_title": "Also Available On",
+    "dl_stores_subtitle": "Choose your preferred store to download Octo Black.",
+    "dl_stores_pending": "Store links are coming soon — Octo Black is currently downloadable from GitHub Releases.",
+    "store_apkpure": "APKPure",
+    "store_aptoide": "Aptoide",
+    "store_uptodown": "Uptodown",
+    "store_github": "GitHub",
+    "store_mediafire": "MediaFire",
+
+    // Global UI
+    "ui_back_to_top": "Back to top",
 
     // Footer
     "footer_brand_desc": "Octo Black is a premium unified Android emulator frontend bringing your classic retro gaming collection together.",
@@ -140,10 +176,10 @@ window.translations = {
     "lang_switch_label": "English",
 
     // Hero Section
-    "hero_tag": "الإصدار الرسمي Octo Black v1.0.1",
+    "hero_tag": "الإصدار الرسمي Octo Black v1.0.3",
     "hero_title": "عالم الألعاب الكلاسيكية. في تجربة واحدة.",
     "hero_desc": "جمع مجموعتك الكلاسيكية في مكان واحد مع Octo Black، تجربة محاكاة شاملة وموحدة لنظام أندرويد مدعومة بنوى Libretro عالية الأداء.",
-    "hero_btn_download": "تنزيل Octo Black v1.0.1",
+    "hero_btn_download": "تنزيل Octo Black v1.0.3",
     "hero_btn_explore": "استكشف المميزات",
 
     // Home Features Overview
@@ -176,9 +212,9 @@ window.translations = {
 
     // Download Section
     "home_dl_title": "جاهز لاستعادة ذكريات الألعاب؟",
-    "home_dl_desc": "حمل تطبيق Octo Black الإصدار 1.0.1 لنظام أندرويد (ARM64). مجاني، خفيف الوزن ومعد جاهزاً للتشغيل المباشر.",
+    "home_dl_desc": "حمل تطبيق Octo Black الإصدار 1.0.3 لنظام أندرويد (ARM64). مجاني، خفيف الوزن ومعد جاهزاً للتشغيل المباشر.",
     "dl_status_label": "حالة الإصدار على GitHub:",
-    "dl_status_active": "الإصدار v1.0.1 متاح للتنزيل",
+    "dl_status_active": "الإصدار v1.0.3 متاح للتنزيل",
     "dl_req_title": "متطلبات التشغيل:",
     "dl_req_desc": "نظام أندرويد 8.0 (Oreo) أو أعلى • معالج 64-bit ARM (arm64-v8a)",
 
@@ -197,12 +233,12 @@ window.translations = {
     // Download Page Detailed
     "page_dl_title": "التنزيل الرسمي",
     "page_dl_subtitle": "احصل على أحدث نسخة رسمية من تطبيق Octo Black مباشرة من إصدارات GitHub.",
-    "dl_card_version": "الإصدار 1.0.1 (البنية 2)",
+    "dl_card_version": "الإصدار 1.0.3 (البنية 4)",
     "dl_card_date": "تاريخ النشر: الإصدار المستقر الرسمي",
     "dl_card_arch": "المعمارية: arm64-v8a",
-    "dl_card_btn": "تنزيل ملف Octo Black v1.0.1 APK",
+    "dl_card_btn": "تنزيل ملف Octo Black v1.0.3 APK",
     "dl_install_guide_title": "طريقة التثبيت على الأندرويد",
-    "step_1": "1. قم بتنزيل ملف octo-black-1.0.1v-arm64-v8a.apk على جهازك.",
+    "step_1": "1. قم بتنزيل ملف octo-black-1.0.3v-arm64-v8a.apk على جهازك.",
     "step_2": "2. افتح الملف المُنزل باستخدام مدير الملفات أو المتصفح.",
     "step_3": "3. اسمح بالتثبيت من مصادر غير معروفة إذا طلب منك نظام الأندرويد.",
     "step_4": "4. افتح Octo Black وامنحه صلاحية التخزين لفحص ألعابك.",
@@ -220,12 +256,35 @@ window.translations = {
     "v100_item_6": "دعم كامل للغتين العربية والإنجليزية مع تخطيط RTL.",
 
     "v101_title": "v1.0.1 — تحديث شاشة وأزرار دريم كاست",
-    "v101_date": "الإصدار الحالي",
+    "v101_date": "نُشر: أوائل نوفمبر 2026",
     "v101_item_1": "جديد — وضع عرض 16:9 لألعاب دريم كاست، ملائم تماماً لشاشات الهواتف الحديثة.",
     "v101_item_2": "إصلاح — أزرار التحكم على الشاشة لدريم كاست تعمل الآن بشكل صحيح: START و A و الاتجاهات.",
     "v101_item_3": "تحسين — الاستقرار والأداء العام لجميع الأنظمة المدعومة.",
     "v101_item_4": "تحديث — معلومات الإصدار وملفات التنزيل إلى v1.0.1 (البنية 2).",
     "v101_item_5": "الموقع — تحسين سجل التغييرات ثنائي اللغة وتصحيح مبدّل اللغة العربية/الإنجليزية.",
+
+    // ملاحظات إصدار v1.0.2
+    "v102_title": "v1.0.2 — تجديد شاشة أكواد الغش ومحرر التخطيط",
+    "v102_date": "الإصدار السابق",
+    "v102_item_1": "جديد — زر قلم داخل شاشة اللعب يوقف المحاكي مؤقتاً، يفتح محرر تخطيط أزرار اللمس، ثم يستأنف اللعب من حيث توقف.",
+    "v102_item_2": "جديد — إعادة تصميم شاشة أكواد الغش مع بحث ومرشحات (الكل/النشطة) وعدّاد للأكواد النشطة ومفاتيح موحّدة وأقسام قاعدة بيانات وكوداتي، وأكواد قابلة للتوسّع مع تعديل/حذف للكودات اليدوية بتأكيد.",
+    "v102_item_3": "تحسين — توحيد زرّي كتف يد التحكم في موضع متماثل مع إعادة التخطيط الافتراضي للزوايا كالأجهزة الكلاسيكية.",
+    "v102_item_4": "تحسين — رأس المكتبة وخيارات الفرز، إضافةً إلى إزالة الخلفية السوداء عن أغلفة الألعاب.",
+    "v102_item_5": "إصلاح — خطأ LateInitializationError عند إعادة تحميل إعدادات التشغيل.",
+    "v102_item_6": "ترجمة — تغطية عربية كاملة لشاشات الأكواد والقائمة السريعة أثناء اللعب.",
+    "v102_item_7": "جديد — الأغلفة الآن بأسلوب 3D box جديد.",
+
+    // ملاحظات إصدار v1.0.3
+    "v103_title": "v1.0.3 — تحديث Nintendo Wii وDolphin",
+    "v103_date": "الإصدار الحالي",
+    "v103_item_1": "جديد — دعم Nintendo Wii عبر نواة Dolphin الرسمية (Libretro، معمارية arm64) مع استخراج ملفات النظام (Sys) تلقائياً عند أول تشغيل — بدون BIOS.",
+    "v103_item_8": "ملاحظة — محاكي Dolphin (جهاز Nintendo Wii) لا يعمل حالياً؛ تمت إضافته فقط إلى التطبيق وسيتم تفعيله في تحديث قادم.",
+    "v103_item_2": "جديد — ظهور Nintendo Wii في شريط الأنظمة بالشاشة الرئيسية.",
+    "v103_item_3": "تحسين — ماسح رومات أذكى: الملفات .wbfs/.gcz/.rvz/.wia/.ciso و .nkit.iso تُصنَّف تلقائياً، بينما تُحدَّد ملفات .iso الغامضة فقط برمز [Wii] في اسم الملف (وليس اسم المجلد) حتى لا تُصنَّف رومات PSP خطأً.",
+    "v103_item_4": "إصلاح — إعادة تصنيف الرومات المحفوظة سابقاً بشكل صحيح (مثل ملفات .nkit.iso العالقة كـ Unknown).",
+    "v103_item_5": "إصلاح — استخراج ملفات نظام Dolphin (Sys) إلى المسار الصحيح عند أول تشغيل.",
+    "v103_item_6": "تحسين — إعادة تصميم بطاقة المطوّر في الإعدادات مع زر تواصل جديد عبر واتساب.",
+    "v103_item_7": "تحديث — معلومات الإصدار وملفات التنزيل إلى v1.0.3 (البنية 4).",
 
     // FAQ Page
     "page_faq_title": "الأسئلة الشائعة",
@@ -240,6 +299,19 @@ window.translations = {
     "faq_a4": "نعم، يتعرف Octo Black تلقائياً على أذرع التحكم اللاسلكية وبلوتوث القياسية (Xbox, PlayStation, Ipega وغيرها).",
     "faq_q5": "هل أكواد الغش (Cheats) مدعومة؟",
     "faq_a5": "نعم، يتضمن التطبيق قاعدة بيانات CWCheat مضمنة ويدعم الإدخال اليدوي للأكواد.",
+
+    // شعارات المتاجر (صفحة التنزيل)
+    "dl_stores_title": "متوفر أيضاً على",
+    "dl_stores_subtitle": "اختر المتجر الذي تفضّله لتنزيل Octo Black.",
+    "dl_stores_pending": "روابط المتاجر قادمة قريباً — Octo Black متاح للتنزيل حالياً من إصدارات GitHub.",
+    "store_apkpure": "APKPure",
+    "store_aptoide": "Aptoide",
+    "store_uptodown": "Uptodown",
+    "store_github": "GitHub",
+    "store_mediafire": "MediaFire",
+
+    // واجهة عامة
+    "ui_back_to_top": "العودة إلى الأعلى",
 
     // Footer
     "footer_brand_desc": "Octo Black هو واجهة محاكاة راقية لأجهزة أندرويد تجمع كل ألعابك الكلاسيكية في منصة واحدة.",

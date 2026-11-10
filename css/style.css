@@ -158,6 +158,14 @@ ul {
   z-index: 1000;
   display: flex;
   align-items: center;
+  transition: background-color var(--transition-normal),
+              box-shadow var(--transition-normal);
+}
+
+/* Stronger, more opaque backdrop once the page is scrolled */
+.navbar-header.is-scrolled {
+  background: rgba(10, 11, 13, 0.94);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
 }
 
 .nav-container {
@@ -412,7 +420,7 @@ ul {
   align-items: center;
 }
 
-/* Professional Gaming Device Bezel & Animations */
+/* Hero promo artwork — single static image with ambient float & glow */
 @keyframes float {
   0%, 100% {
     transform: translateY(0);
@@ -431,119 +439,29 @@ ul {
   }
 }
 
-@keyframes glassReflection {
-  0% { left: -150%; }
-  25% { left: 150%; }
-  100% { left: 150%; }
-}
-
-.landscape-mockup-container {
+.hero-promo {
   position: relative;
   width: 100%;
   max-width: 640px;
   margin-inline: auto;
-  background: linear-gradient(145deg, #1c1f26 0%, #0d0f12 100%);
-  border: 2px solid #2d323d;
-  border-radius: 20px;
-  padding: 16px 16px 26px 16px;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0 35px 90px rgba(0, 0, 0, 0.9),
-              0 0 0 1px rgba(255, 255, 255, 0.05) inset;
+              0 0 0 1px rgba(255, 255, 255, 0.04) inset;
   animation: float 6s ease-in-out infinite, ambientGlow 4s ease-in-out infinite;
   transition: transform var(--transition-normal);
 }
 
-.landscape-mockup-container:hover {
+.hero-promo:hover {
   transform: translateY(-4px) scale(1.01);
   animation-play-state: paused;
 }
 
-/* Subtle power indicator LED / branding at bottom bezel */
-.landscape-mockup-container::after {
-  content: '';
-  position: absolute;
-  bottom: 11px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 40px;
-  height: 4px;
-  background-color: rgba(255, 255, 255, 0.25);
-  border-radius: 2px;
-  box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
-}
-
-.screen-content-wrapper {
-  position: relative;
+.hero-promo img {
   width: 100%;
-  aspect-ratio: 16 / 10;
-  overflow: hidden;
-  border-radius: 10px;
-  background-color: var(--bg-black);
-  border: 1px solid #08090a;
-  box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.95);
-}
-
-/* Glass screen reflection sweep */
-.screen-content-wrapper::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: -150%;
-  width: 150%;
-  height: 100%;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(255, 255, 255, 0.04),
-    transparent
-  );
-  transform: skewX(-20deg);
-  pointer-events: none;
-  z-index: 10;
-  animation: glassReflection 7s ease-in-out infinite;
-}
-
-.screen-slider {
-  display: flex;
-  width: 100%;
-  height: 100%;
-  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.screen-slide {
-  min-width: 100%;
-  height: 100%;
-  object-fit: contain;
-  background-color: #000;
-  transform: scale(0.97);
-  opacity: 0.8;
-  transition: transform 0.7s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.7s ease;
-}
-
-.screen-slide.active-slide {
-  transform: scale(1);
-  opacity: 1;
-}
-
-.slider-controls {
-  display: flex;
-  justify-content: center;
-  gap: 0.5rem;
-  margin-top: 1rem;
-}
-
-.slider-dot {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.3);
-  cursor: pointer;
-  transition: all var(--transition-fast);
-}
-
-.slider-dot.active {
-  background-color: var(--text-primary);
-  width: 24px;
-  border-radius: 4px;
+  height: auto;
+  display: block;
 }
 
 /* --------------------------------------------------------------------------
@@ -1106,8 +1024,7 @@ ul {
 .card,
 .system-card,
 .gallery-item,
-.filter-btn,
-.slider-dot {
+.filter-btn {
   transition-duration: var(--motion-duration);
   transition-timing-function: var(--motion-ease);
 }
@@ -1139,6 +1056,11 @@ ul {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+
+  /* With animations disabled, reveal elements must stay fully visible */
+  .reveal {
+    opacity: 1 !important;
+  }
 }
 
 /* --------------------------------------------------------------------------
@@ -1148,6 +1070,177 @@ html, body {
   cursor: default;
 }
 
-a, button, .card, .system-card, .filter-btn, .slider-dot, .accordion-header, .social-icon-btn, .lang-btn {
+a, button, .card, .system-card, .filter-btn, .accordion-header, .social-icon-btn, .lang-btn {
   cursor: pointer;
+}
+
+/* --------------------------------------------------------------------------
+   15. Enhanced Hover Effects
+   -------------------------------------------------------------------------- */
+.card-icon,
+.system-logo,
+.timeline-card {
+  transition: transform var(--motion-duration) var(--motion-ease),
+              box-shadow var(--motion-duration) var(--motion-ease),
+              border-color var(--motion-duration) var(--motion-ease);
+}
+
+.card:hover .card-icon {
+  transform: translateY(-3px) scale(1.06);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.45);
+}
+
+.system-card:hover .system-logo {
+  transform: scale(1.1) rotate(-3deg);
+}
+
+.timeline-card:hover {
+  border-color: var(--border-hover);
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* --------------------------------------------------------------------------
+   16. Store Badges (Download Page)
+   White/light pills — all store logos render black.
+   -------------------------------------------------------------------------- */
+.store-badges {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 0.5rem;
+}
+
+.store-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.7rem 1.35rem;
+  border-radius: 999px;
+  background-color: #f4f5f7;
+  border: 1px solid #e2e4e9;
+  color: #101114;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform var(--motion-duration) var(--motion-ease),
+              box-shadow var(--motion-duration) var(--motion-ease),
+              border-color var(--motion-duration) var(--motion-ease);
+}
+
+.store-badge img {
+  display: block;
+  height: 20px;
+  width: auto;
+  flex-shrink: 0;
+}
+
+.store-badge--wordmark img {
+  height: 22px;
+}
+
+.store-badge:hover {
+  transform: translateY(-3px);
+  border-color: #c9ccd4;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.35);
+}
+
+.store-badge.is-disabled {
+  opacity: 0.55;
+  filter: grayscale(1);
+  pointer-events: none;
+  cursor: not-allowed;
+}
+
+.store-badges-note {
+  margin-top: 1.25rem;
+  text-align: center;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+/* --------------------------------------------------------------------------
+   17. Scroll Reveal
+   The .reveal class is only ever added by main.js, so without JavaScript
+   every element stays fully visible. The `translate` property is animated
+   (not `transform`) so it never fights the hover transforms above.
+   -------------------------------------------------------------------------- */
+.reveal {
+  opacity: 0;
+}
+
+.reveal.is-visible {
+  animation: revealIn 0.7s var(--motion-ease) forwards;
+}
+
+@keyframes revealIn {
+  from {
+    opacity: 0;
+    translate: 0 24px;
+  }
+  to {
+    opacity: 1;
+    translate: 0 0;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   18. Scroll Progress Bar & Back-to-Top (injected by main.js)
+   -------------------------------------------------------------------------- */
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  width: 0;
+  z-index: 1100;
+  background: linear-gradient(90deg, var(--accent-primary, #e63946), var(--accent-secondary, #ff7b54));
+  box-shadow: 0 0 10px rgba(230, 57, 70, 0.55);
+  transition: width 90ms linear;
+  pointer-events: none;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 28px;
+  right: 28px;
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+  background-color: rgba(28, 30, 35, 0.92);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 1050;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(14px);
+  transition: opacity var(--transition-normal),
+              visibility var(--transition-normal),
+              transform var(--transition-normal),
+              border-color var(--transition-fast),
+              background-color var(--transition-fast);
+}
+
+.back-to-top svg {
+  width: 20px;
+  height: 20px;
+}
+
+.back-to-top.is-visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.back-to-top:hover {
+  border-color: var(--border-hover);
+  background-color: var(--bg-panel-hover);
+  transform: translateY(-3px);
 }
