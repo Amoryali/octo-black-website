@@ -16,23 +16,25 @@ window.translations = {
     "lang_switch_label": "Arabic",
 
     // Hero Section
-    "hero_tag": "Octo Black v1.0.3 Official Release",
+    "hero_tag": "Octo Black v1.0.4 Official Release",
     "hero_title": "YOUR RETRO WORLD. ONE EXPERIENCE.",
     "hero_desc": "Bring your classic gaming collection together with Octo Black, a unified Android retro gaming experience powered by high-performance Libretro cores.",
-    "hero_btn_download": "Download Octo Black v1.0.3",
+    "hero_btn_download": "Download Octo Black v1.0.4",
     "hero_btn_explore": "Explore Features",
 
     // Home Features Overview
     "home_features_title": "Built for Pure Gaming",
     "home_features_subtitle": "Engineered with precision for seamless emulation, sleek media organization, and zero clutter.",
     "feat_1_title": "Unified Core Architecture",
-    "feat_1_desc": "Seamlessly emulates NES, SNES, N64, PlayStation, Game Boy Advance, PSP, NDS, and Dreamcast powered by optimized native Libretro cores.",
+    "feat_1_desc": "Seamlessly emulates NES, SNES, N64, PlayStation, Game Boy Advance, PSP, NDS, Dreamcast, Wii, GameCube, and Atari 7800 powered by optimized native Libretro cores.",
     "feat_2_title": "Automatic ROM Scanner",
     "feat_2_desc": "Scans your storage for retro game dumps, matching metadata, serial numbers, cover artwork, and system categories automatically.",
     "feat_3_title": "Integrated CWCheat Engine",
     "feat_3_desc": "Built-in CWCheat database with manual cheat code entry support for all integrated cores.",
     "feat_4_title": "Custom Virtual Touch Gamepad",
     "feat_4_desc": "Fully customizable touch controls with editor, analog throttling, and physical bluetooth gamepad auto-mapping.",
+    "feat_5_title": "Game Downloads",
+    "feat_5_desc": "New in v1.0.4 — browse curated game collections by device inside Settings; each collection opens in your external browser, so nothing is bundled inside the app.",
 
     // Systems Section
     "home_systems_title": "Supported Retro Systems",
@@ -52,9 +54,9 @@ window.translations = {
 
     // Download Section
     "home_dl_title": "Ready to Play Your Classics?",
-    "home_dl_desc": "Download Octo Black v1.0.3 for Android (ARM64). Free, lightweight, and pre-configured for instant retro gaming.",
+    "home_dl_desc": "Download Octo Black v1.0.4 for Android (ARM64). Free, lightweight, and pre-configured for instant retro gaming.",
     "dl_status_label": "Official GitHub Release Status:",
-    "dl_status_active": "v1.0.3 Available for Download",
+    "dl_status_active": "v1.0.4 Available for Download",
     "dl_req_title": "System Requirements:",
     "dl_req_desc": "Android 8.0 (Oreo) or higher • 64-bit ARM CPU (arm64-v8a)",
 
@@ -62,7 +64,7 @@ window.translations = {
     "page_features_title": "Advanced Features",
     "page_features_subtitle": "Discover everything Octo Black brings to your Android device.",
     "detail_feat_1_title": "High-Performance Emulation",
-    "detail_feat_1_desc": "Pre-configured native Libretro cores including Snes9x, PCSX ReARMed, mGBA, PPSSPP, Mupen64Plus-Next, melonDS, flycast, and Stella 2023 for native 60 FPS performance.",
+    "detail_feat_1_desc": "Pre-configured native Libretro cores including Snes9x, PCSX ReARMed, mGBA, PPSSPP, Mupen64Plus-Next, melonDS, flycast, Stella 2023, ProSystem (Atari 7800), and Dolphin (Wii & GameCube) for native 60 FPS performance.",
     "detail_feat_2_title": "Smart Storage & Folder Watcher",
     "detail_feat_2_desc": "Keeps your library up to date automatically when new games are added, with support for compressed archives and multi-disc games.",
     "detail_feat_3_title": "Audio & Video Fine-Tuning",
@@ -73,12 +75,12 @@ window.translations = {
     // Download Page Detailed
     "page_dl_title": "Official Download",
     "page_dl_subtitle": "Get the latest official Octo Black APK build directly from our GitHub Releases.",
-    "dl_card_version": "Version 1.0.3 (Build 4)",
+    "dl_card_version": "Version 1.0.4 (Build 5)",
     "dl_card_date": "Released: Official Stable Build",
     "dl_card_arch": "Architecture: arm64-v8a",
-    "dl_card_btn": "Download Octo Black v1.0.3 APK",
+    "dl_card_btn": "Download Octo Black v1.0.4 APK",
     "dl_install_guide_title": "How to Install on Android",
-    "step_1": "1. Download the octo-black-1.0.3v-arm64-v8a.apk file to your Android device.",
+    "step_1": "1. Download the octo-black-1.0.4v-arm64-v8a.apk file to your Android device.",
     "step_2": "2. Open the downloaded file using your browser or file manager.",
     "step_3": "3. Allow installation from unknown sources if prompted by Android.",
     "step_4": "4. Launch Octo Black and grant storage access to scan your ROM collection.",
@@ -106,7 +108,7 @@ window.translations = {
 
     // v1.0.2 release notes
     "v102_title": "v1.0.2 — Cheat Codes Redesign & Touch Layout Editor",
-    "v102_date": "Previous Release",
+    "v102_date": "Released: November 2026",
     "v102_item_1": "New — a pencil button inside the gameplay screen pauses the emulator, opens the touch control layout editor, then resumes play from where it stopped.",
     "v102_item_2": "New — redesigned Cheat Codes screen with search, All/Active filters, an active counter, unified switches, Database and My Cheats sections, expandable code lines, and edit/delete for manual cheats with confirmation.",
     "v102_item_3": "Improved — both controller shoulder buttons unified into one symmetric position, with the default corner layout restored like classic consoles.",
@@ -117,7 +119,7 @@ window.translations = {
 
     // v1.0.3 release notes
     "v103_title": "v1.0.3 — Nintendo Wii & Dolphin Update",
-    "v103_date": "Current Release",
+    "v103_date": "Previous Release",
     "v103_item_1": "New — Nintendo Wii support via the official Dolphin Libretro core (arm64), with system files (Sys) extracted automatically on first launch — no BIOS required.",
     "v103_item_8": "Note — the Dolphin (Nintendo Wii) emulator does not work yet; it has only been added to the app and will be enabled in a future update.",
     "v103_item_2": "New — Nintendo Wii now appears on the home screen system strip.",
@@ -126,6 +128,17 @@ window.translations = {
     "v103_item_5": "Fixed — Dolphin system files (Sys) now extract to the correct path on first launch.",
     "v103_item_6": "Improved — redesigned Developer card in Settings with a new WhatsApp contact button.",
     "v103_item_7": "Updated — version information and download files to v1.0.3 (build 4).",
+
+    // v1.0.4 release notes
+    "v104_title": "v1.0.4 — Game Downloads, Atari 7800, GameCube & Wii Update",
+    "v104_date": "Current Release",
+    "v104_item_1": "New — Game Downloads section in Settings: browse curated game collections by device, and each collection opens in your external browser — nothing is bundled or downloaded inside the app.",
+    "v104_item_2": "New — Atari 7800 support via the official ProSystem Libretro core (arm64): .a78 files classify directly, shared .bin files resolve from [7800] filename or folder hints, and no BIOS is bundled — gameplay verified on device.",
+    "v104_item_3": "New — Nintendo GameCube support via the Dolphin core: .gcm files classify automatically, [GameCube]/[GC] tokens in file names are recognized, and GameCube gets its own touch layout with colored A/B/X/Y buttons, L, Z, and R — gameplay verified on device.",
+    "v104_item_4": "Fixed — Nintendo Wii now plays properly: black screen fixed (composite VBO for the GLES 3.0 rule + forced depth/stencil) and dead on-screen buttons fixed (the emulated Wiimote now connects, with 1/2/C/Z mapped to START/SELECT/X/Y) — video and controls verified on device.",
+    "v104_item_5": "Improved — emulator test screen and touch layout editor are now system-aware, serving the right button set for Wii and GameCube remapping.",
+    "v104_item_6": "Improved — removed leftover diagnostic logging from the native video and input paths for cleaner gameplay sessions.",
+    "v104_item_7": "Updated — version information and download files to v1.0.4 (build 5).",
 
     // FAQ Page
     "page_faq_title": "Frequently Asked Questions",
@@ -176,23 +189,25 @@ window.translations = {
     "lang_switch_label": "English",
 
     // Hero Section
-    "hero_tag": "الإصدار الرسمي Octo Black v1.0.3",
+    "hero_tag": "الإصدار الرسمي Octo Black v1.0.4",
     "hero_title": "عالم الألعاب الكلاسيكية. في تجربة واحدة.",
     "hero_desc": "جمع مجموعتك الكلاسيكية في مكان واحد مع Octo Black، تجربة محاكاة شاملة وموحدة لنظام أندرويد مدعومة بنوى Libretro عالية الأداء.",
-    "hero_btn_download": "تنزيل Octo Black v1.0.3",
+    "hero_btn_download": "تنزيل Octo Black v1.0.4",
     "hero_btn_explore": "استكشف المميزات",
 
     // Home Features Overview
     "home_features_title": "مصمم لعشاق الألعاب الأصيلة",
     "home_features_subtitle": "تم تطويره بدقة عالية ليمنحك محاكاة سلسة، وتنظيماً راقياً لمجموعتك، وبدون أي تعقيد.",
     "feat_1_title": "معمارية نوى موحدة",
-    "feat_1_desc": "يحاكي بسلاسة أجهزة NES, SNES, N64, PlayStation, Game Boy Advance, PSP, NDS, و Dreamcast عبر نوى Libretro مجتمعة ومحدثة.",
+    "feat_1_desc": "يحاكي بسلاسة أجهزة NES, SNES, N64, PlayStation, Game Boy Advance, PSP, NDS, Dreamcast, Wii, GameCube, و Atari 7800 عبر نوى Libretro مجتمعة ومحدثة.",
     "feat_2_title": "ماسح ROMs تلقائي",
     "feat_2_desc": "يفحص وحدة التخزين تلقائياً لاكتشاف الألعاب وتصنيفها واستخراج الأغلفة والأرقام التسلسلية بكل سهولة.",
     "feat_3_title": "محرك CWCheat مضمن",
     "feat_3_desc": "يحتوي على قاعدة بيانات CWCheat مع إمكانية إدخال أكواد الغش يدويًا للنوى المدعومة.",
     "feat_4_title": "ذراع تحكم لمسي قابل للتخصيص",
     "feat_4_desc": "أزرار لمسية قابلة للتعديل بالكامل مع محرر موقع الأزرار، والتعرف التلقائي على أذرع التحكم اللاسلكية.",
+    "feat_5_title": "تحميل الألعاب",
+    "feat_5_desc": "جديد في v1.0.4 — تصفّح مجموعات ألعاب مختارة حسب الجهاز داخل الإعدادات؛ وكل مجموعة تُفتح في متصفحك الخارجي، دون تضمين أي ملفات داخل التطبيق.",
 
     // Systems Section
     "home_systems_title": "الأنظمة الكلاسيكية المدعومة",
@@ -212,9 +227,9 @@ window.translations = {
 
     // Download Section
     "home_dl_title": "جاهز لاستعادة ذكريات الألعاب؟",
-    "home_dl_desc": "حمل تطبيق Octo Black الإصدار 1.0.3 لنظام أندرويد (ARM64). مجاني، خفيف الوزن ومعد جاهزاً للتشغيل المباشر.",
+    "home_dl_desc": "حمل تطبيق Octo Black الإصدار 1.0.4 لنظام أندرويد (ARM64). مجاني، خفيف الوزن ومعد جاهزاً للتشغيل المباشر.",
     "dl_status_label": "حالة الإصدار على GitHub:",
-    "dl_status_active": "الإصدار v1.0.3 متاح للتنزيل",
+    "dl_status_active": "الإصدار v1.0.4 متاح للتنزيل",
     "dl_req_title": "متطلبات التشغيل:",
     "dl_req_desc": "نظام أندرويد 8.0 (Oreo) أو أعلى • معالج 64-bit ARM (arm64-v8a)",
 
@@ -222,7 +237,7 @@ window.translations = {
     "page_features_title": "المميزات المتقدمة",
     "page_features_subtitle": "اكتشف كل ما يقدمه Octo Black لجهاز الأندرويد الخاص بك.",
     "detail_feat_1_title": "محاكاة فائقة الأداء",
-    "detail_feat_1_desc": "نوى مضمنة ومجهزة من Snes9x, PCSX ReARMed, mGBA, PPSSPP, Mupen64Plus-Next, melonDS, flycast, و Stella 2023 لأداء ثابِت عند 60 إطاراً.",
+    "detail_feat_1_desc": "نوى مضمنة ومجهزة من Snes9x, PCSX ReARMed, mGBA, PPSSPP, Mupen64Plus-Next, melonDS, flycast, Stella 2023, ProSystem (Atari 7800), و Dolphin (Wii و GameCube) لأداء ثابِت عند 60 إطاراً.",
     "detail_feat_2_title": "مراقب المجلدات الذكي",
     "detail_feat_2_desc": "يحدث مكتبتك تلقائياً عند إضافة ألعاب جديدة، مع دعم الملفات المضغوطة والأقراص المتعددة.",
     "detail_feat_3_title": "ضبط الصوت والصورة",
@@ -233,12 +248,12 @@ window.translations = {
     // Download Page Detailed
     "page_dl_title": "التنزيل الرسمي",
     "page_dl_subtitle": "احصل على أحدث نسخة رسمية من تطبيق Octo Black مباشرة من إصدارات GitHub.",
-    "dl_card_version": "الإصدار 1.0.3 (البنية 4)",
+    "dl_card_version": "الإصدار 1.0.4 (البنية 5)",
     "dl_card_date": "تاريخ النشر: الإصدار المستقر الرسمي",
     "dl_card_arch": "المعمارية: arm64-v8a",
-    "dl_card_btn": "تنزيل ملف Octo Black v1.0.3 APK",
+    "dl_card_btn": "تنزيل ملف Octo Black v1.0.4 APK",
     "dl_install_guide_title": "طريقة التثبيت على الأندرويد",
-    "step_1": "1. قم بتنزيل ملف octo-black-1.0.3v-arm64-v8a.apk على جهازك.",
+    "step_1": "1. قم بتنزيل ملف octo-black-1.0.4v-arm64-v8a.apk على جهازك.",
     "step_2": "2. افتح الملف المُنزل باستخدام مدير الملفات أو المتصفح.",
     "step_3": "3. اسمح بالتثبيت من مصادر غير معروفة إذا طلب منك نظام الأندرويد.",
     "step_4": "4. افتح Octo Black وامنحه صلاحية التخزين لفحص ألعابك.",
@@ -265,7 +280,7 @@ window.translations = {
 
     // ملاحظات إصدار v1.0.2
     "v102_title": "v1.0.2 — تجديد شاشة أكواد الغش ومحرر التخطيط",
-    "v102_date": "الإصدار السابق",
+    "v102_date": "نُشر: نوفمبر 2026",
     "v102_item_1": "جديد — زر قلم داخل شاشة اللعب يوقف المحاكي مؤقتاً، يفتح محرر تخطيط أزرار اللمس، ثم يستأنف اللعب من حيث توقف.",
     "v102_item_2": "جديد — إعادة تصميم شاشة أكواد الغش مع بحث ومرشحات (الكل/النشطة) وعدّاد للأكواد النشطة ومفاتيح موحّدة وأقسام قاعدة بيانات وكوداتي، وأكواد قابلة للتوسّع مع تعديل/حذف للكودات اليدوية بتأكيد.",
     "v102_item_3": "تحسين — توحيد زرّي كتف يد التحكم في موضع متماثل مع إعادة التخطيط الافتراضي للزوايا كالأجهزة الكلاسيكية.",
@@ -276,7 +291,7 @@ window.translations = {
 
     // ملاحظات إصدار v1.0.3
     "v103_title": "v1.0.3 — تحديث Nintendo Wii وDolphin",
-    "v103_date": "الإصدار الحالي",
+    "v103_date": "الإصدار السابق",
     "v103_item_1": "جديد — دعم Nintendo Wii عبر نواة Dolphin الرسمية (Libretro، معمارية arm64) مع استخراج ملفات النظام (Sys) تلقائياً عند أول تشغيل — بدون BIOS.",
     "v103_item_8": "ملاحظة — محاكي Dolphin (جهاز Nintendo Wii) لا يعمل حالياً؛ تمت إضافته فقط إلى التطبيق وسيتم تفعيله في تحديث قادم.",
     "v103_item_2": "جديد — ظهور Nintendo Wii في شريط الأنظمة بالشاشة الرئيسية.",
@@ -285,6 +300,17 @@ window.translations = {
     "v103_item_5": "إصلاح — استخراج ملفات نظام Dolphin (Sys) إلى المسار الصحيح عند أول تشغيل.",
     "v103_item_6": "تحسين — إعادة تصميم بطاقة المطوّر في الإعدادات مع زر تواصل جديد عبر واتساب.",
     "v103_item_7": "تحديث — معلومات الإصدار وملفات التنزيل إلى v1.0.3 (البنية 4).",
+
+    // ملاحظات إصدار v1.0.4
+    "v104_title": "v1.0.4 — تحميل الألعاب وAtari 7800 وGameCube وWii",
+    "v104_date": "الإصدار الحالي",
+    "v104_item_1": "جديد — قسم تحميل الألعاب في الإعدادات: تصفّح مجموعات ألعاب مختارة حسب الجهاز، وكل مجموعة تُفتح في متصفحك الخارجي — دون تضمين أي ملفات أو تنزيل داخل التطبيق.",
+    "v104_item_2": "جديد — دعم Atari 7800 عبر نواة ProSystem الرسمية (Libretro، معمارية arm64): ملفات .a78 تُصنَّف مباشرةً، وملفات .bin المشتركة تُحلّ من رمز [7800] في اسم الملف أو تلميح المجلد، بدون تضمين أي BIOS — تم التحقق من اللعب على الجهاز.",
+    "v104_item_3": "جديد — دعم Nintendo GameCube عبر نواة Dolphin: ملفات .gcm تُصنَّف تلقائياً، ويتعرّف الماسح على رمزي [GameCube]/[GC] في أسماء الملفات، مع تخطيط لمس مخصص لألعاب GameCube يضم أزرار A/B/X/Y ملوّنة و L و Z و R — تم التحقق من اللعب على الجهاز.",
+    "v104_item_4": "إصلاح — Nintendo Wii تعمل الآن بشكل صحيح: إصلاح الشاشة السوداء (composite VBO لقاعدة GLES 3.0 مع إجبار depth/stencil) وإصلاح الأزرار الميتة على الشاشة (الويموت المحاكى يتصل الآن مع تعيين 1/2/C/Z إلى START/SELECT/X/Y) — تم التحقق من الفيديو وأزرار التحكم على الجهاز.",
+    "v104_item_5": "تحسين — شاشة اختبار المحاكي ومحرر تخطيط اللمس يتعرّفان الآن على النظام، ليقدّما مجموعة الأزرار المناسبة لإعادة تخصيص Wii وGameCube.",
+    "v104_item_6": "تحسين — إزالة سجلات التشخيص المتبقية من مسارات الفيديو والإدخال الأصلية لجلسات لعب أنظف.",
+    "v104_item_7": "تحديث — معلومات الإصدار وملفات التنزيل إلى v1.0.4 (البنية 5).",
 
     // FAQ Page
     "page_faq_title": "الأسئلة الشائعة",

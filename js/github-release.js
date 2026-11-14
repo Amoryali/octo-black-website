@@ -4,7 +4,7 @@
    ========================================================================== */
 
 (function () {
-  const GITHUB_REPO = 'OctoBlack/octoblackemulatorgames';
+  const GITHUB_REPO = 'Amoryali/octo-black-website';
   const API_URL = `https://api.github.com/repos/${GITHUB_REPO}/releases/latest`;
 
   async function fetchLatestRelease() {
@@ -25,7 +25,7 @@
       }
 
       const releaseData = await response.json();
-      const tagName = releaseData.tag_name || 'v1.0.3';
+      const tagName = releaseData.tag_name || 'v1.0.4';
 
       // Find APK asset in assets list
       let apkAsset = null;
@@ -56,13 +56,13 @@
       });
 
     } catch (error) {
-      console.log('GitHub Release API Check: Using default v1.0.3 release specs.', error.message);
-      // Fallback state: Set default v1.0.3 values without breaking UI
+      console.log('GitHub Release API Check: Using default v1.0.4 release specs.', error.message);
+      // Fallback state: Set default v1.0.4 values without breaking UI
       if (statusBadge) {
-        statusBadge.textContent = 'v1.0.3 - Stable Release';
+        statusBadge.textContent = 'v1.0.4 - Stable Release';
       }
       if (releaseVersionText) {
-        releaseVersionText.textContent = 'v1.0.3';
+        releaseVersionText.textContent = 'v1.0.4';
       }
       if (releaseSizeText) {
         releaseSizeText.textContent = '~171 MB';

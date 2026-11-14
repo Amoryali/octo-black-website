@@ -100,7 +100,7 @@
             <div class="timeline-card">
               <div class="timeline-version">
                 <h2 class="timeline-title" data-i18n="v102_title">v1.0.2 — Cheat Codes Redesign & Touch Layout Editor</h2>
-                <span class="badge badge-status-supported" data-i18n="v102_date">Previous Release</span>
+                <span class="badge badge-status-supported" data-i18n="v102_date">Released: November 2026</span>
               </div>
               <ul class="timeline-list">
                 <li data-i18n="v102_item_1">New — a pencil button inside the gameplay screen pauses the emulator, opens the touch control layout editor, then resumes play from where it stopped.</li>
@@ -119,7 +119,7 @@
             <div class="timeline-card">
               <div class="timeline-version">
                 <h2 class="timeline-title" data-i18n="v103_title">v1.0.3 — Nintendo Wii & Dolphin Update</h2>
-                <span class="badge badge-status-supported" data-i18n="v103_date">Current Release</span>
+                <span class="badge badge-status-supported" data-i18n="v103_date">Previous Release</span>
               </div>
               <ul class="timeline-list">
                 <li data-i18n="v103_item_1">New — Nintendo Wii support via the official Dolphin Libretro core (arm64), with system files (Sys) extracted automatically on first launch — no BIOS required.</li>
@@ -130,6 +130,25 @@
                 <li data-i18n="v103_item_5">Fixed — Dolphin system files (Sys) now extract to the correct path on first launch.</li>
                 <li data-i18n="v103_item_6">Improved — redesigned Developer card in Settings with a new WhatsApp contact button.</li>
                 <li data-i18n="v103_item_7">Updated — version information and download files to v1.0.3 (build 4).</li>
+              </ul>
+            </div>
+          </div>
+          <!-- Release v1.0.4 -->
+          <div class="timeline-item">
+            <div class="timeline-badge"></div>
+            <div class="timeline-card">
+              <div class="timeline-version">
+                <h2 class="timeline-title" data-i18n="v104_title">v1.0.4 — Game Downloads, Atari 7800, GameCube & Wii Update</h2>
+                <span class="badge badge-status-supported" data-i18n="v104_date">Current Release</span>
+              </div>
+              <ul class="timeline-list">
+                <li data-i18n="v104_item_1">New — Game Downloads section in Settings: browse curated game collections by device, and each collection opens in your external browser — nothing is bundled or downloaded inside the app.</li>
+                <li data-i18n="v104_item_2">New — Atari 7800 support via the official ProSystem Libretro core (arm64): .a78 files classify directly, shared .bin files resolve from [7800] filename or folder hints, and no BIOS is bundled — gameplay verified on device.</li>
+                <li data-i18n="v104_item_3">New — Nintendo GameCube support via the Dolphin core: .gcm files classify automatically, [GameCube]/[GC] tokens in file names are recognized, and GameCube gets its own touch layout with colored A/B/X/Y buttons, L, Z, and R — gameplay verified on device.</li>
+                <li data-i18n="v104_item_4">Fixed — Nintendo Wii now plays properly: black screen fixed (composite VBO for the GLES 3.0 rule + forced depth/stencil) and dead on-screen buttons fixed (the emulated Wiimote now connects, with 1/2/C/Z mapped to START/SELECT/X/Y) — video and controls verified on device.</li>
+                <li data-i18n="v104_item_5">Improved — emulator test screen and touch layout editor are now system-aware, serving the right button set for Wii and GameCube remapping.</li>
+                <li data-i18n="v104_item_6">Improved — removed leftover diagnostic logging from the native video and input paths for cleaner gameplay sessions.</li>
+                <li data-i18n="v104_item_7">Updated — version information and download files to v1.0.4 (build 5).</li>
               </ul>
             </div>
           </div>
