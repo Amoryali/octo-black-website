@@ -25,7 +25,7 @@
       }
 
       const releaseData = await response.json();
-      const tagName = releaseData.tag_name || 'v1.0.4';
+      const tagName = releaseData.tag_name || 'v1.0.5';
 
       // Find APK asset in assets list
       let apkAsset = null;
@@ -56,13 +56,13 @@
       });
 
     } catch (error) {
-      console.log('GitHub Release API Check: Using default v1.0.4 release specs.', error.message);
-      // Fallback state: Set default v1.0.4 values without breaking UI
+      console.log('GitHub Release API Check: Using default v1.0.5 release specs.', error.message);
+      // Fallback state: Set default v1.0.5 values without breaking UI
       if (statusBadge) {
-        statusBadge.textContent = 'v1.0.4 - Stable Release';
+        statusBadge.textContent = 'v1.0.5 - Stable Release';
       }
       if (releaseVersionText) {
-        releaseVersionText.textContent = 'v1.0.4';
+        releaseVersionText.textContent = 'v1.0.5';
       }
       if (releaseSizeText) {
         releaseSizeText.textContent = '~171 MB';
