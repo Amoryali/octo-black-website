@@ -16,10 +16,10 @@ window.translations = {
     "lang_switch_label": "Arabic",
 
     // Hero Section
-    "hero_tag": "Octo Black v1.0.5 Official Release",
+    "hero_tag": "Octo Black v1.0.7 Official Release",
     "hero_title": "YOUR RETRO WORLD. ONE EXPERIENCE.",
     "hero_desc": "Bring your classic gaming collection together with Octo Black, a unified Android retro gaming experience powered by high-performance Libretro cores.",
-    "hero_btn_download": "Download Octo Black v1.0.5",
+    "hero_btn_download": "Download Octo Black v1.0.7",
     "hero_btn_explore": "Explore Features",
 
     // Home Features Overview
@@ -36,7 +36,7 @@ window.translations = {
     "feat_5_title": "Game Downloads",
     "feat_5_desc": "New in v1.0.4 — browse curated game collections by device inside Settings; each collection opens in your external browser, so nothing is bundled inside the app.",
     "feat_6_title": "Real Per-Core Options",
-    "feat_6_desc": "New in v1.0.5 — 68 authentic libretro options for GBA, Genesis, NES, SNES and Atari (Settings > Systems & Cores): palettes, TV filters, HD Mode 7, overclocking and more — applied live while you play.",
+    "feat_6_desc": "More than 200 authentic libretro options across 11 systems (Settings > Systems & Cores): renderers, texture filters, HD Mode 7, overclocking, multiplayer networking and one-tap Performance / Balanced / Quality presets.",
 
     // Systems Section
     "home_systems_title": "Supported Retro Systems",
@@ -56,9 +56,9 @@ window.translations = {
 
     // Download Section
     "home_dl_title": "Ready to Play Your Classics?",
-    "home_dl_desc": "Download Octo Black v1.0.5 for Android (ARM64). Free, lightweight, and pre-configured for instant retro gaming.",
+    "home_dl_desc": "Download Octo Black v1.0.7 for Android (ARM64). Free, lightweight, and pre-configured for instant retro gaming.",
     "dl_status_label": "Official GitHub Release Status:",
-    "dl_status_active": "v1.0.5 Available for Download",
+    "dl_status_active": "v1.0.7 Available for Download",
     "dl_req_title": "System Requirements:",
     "dl_req_desc": "Android 8.0 (Oreo) or higher • 64-bit ARM CPU (arm64-v8a)",
 
@@ -77,12 +77,12 @@ window.translations = {
     // Download Page Detailed
     "page_dl_title": "Official Download",
     "page_dl_subtitle": "Get the latest official Octo Black APK build directly from our GitHub Releases.",
-    "dl_card_version": "Version 1.0.5 (Build 6)",
+    "dl_card_version": "Version 1.0.7 (Build 8)",
     "dl_card_date": "Released: Official Stable Build",
     "dl_card_arch": "Architecture: arm64-v8a",
-    "dl_card_btn": "Download Octo Black v1.0.5 APK",
+    "dl_card_btn": "Download Octo Black v1.0.7 APK",
     "dl_install_guide_title": "How to Install on Android",
-    "step_1": "1. Download the octo-black-1.0.5v-arm64-v8a.apk file to your Android device.",
+    "step_1": "1. Download the octo-black-1.0.7v-arm64-v8a.apk file to your Android device.",
     "step_2": "2. Open the downloaded file using your browser or file manager.",
     "step_3": "3. Allow installation from unknown sources if prompted by Android.",
     "step_4": "4. Launch Octo Black and grant storage access to scan your ROM collection.",
@@ -142,9 +142,21 @@ window.translations = {
     "v104_item_6": "Improved — removed leftover diagnostic logging from the native video and input paths for cleaner gameplay sessions.",
     "v104_item_7": "Updated — version information and download files to v1.0.4 (build 5).",
 
+    // v1.0.7 release notes
+    "v107_title": "v1.0.7 — The Big Cores Update: Options, Presets & Multiplayer",
+    "v107_date": "Current Release",
+    "v107_item_1": "New — PlayStation 2 support via the PCEE2 core, radically overhauled: a real renderer switch (Vulkan / OpenGL / Software), 26 authentic core options (texture & trilinear filtering, mipmapping, dithering, FXAA, blending accuracy, audio buffer, MTVU…), widescreen patches enabled by default, and a dedicated DualShock 2 touch overlay.",
+    "v107_item_2": "New — Quality presets: one-tap Performance / Balanced / Quality profiles for PS2, Wii/GameCube, PSP and Nintendo 64, with an active-chip highlight that never overrides your manual choices.",
+    "v107_item_3": "New — PSP deep tuning: 42 real core options (CPU core, I/O timing, buffered frames, texture upscaling xBRZ, texture filtering, MSAA, analog deadzone/sensitivity, PSP model, memory-stick controls) plus a full multiplayer networking group — WLAN, built-in PRO Ad-Hoc server for local play, public internet servers and UPnP port forwarding.",
+    "v107_item_4": "New — Nintendo 64 deep tuning: 40 real core options including the ParaLLEl-RDP renderer with 1x–8x upscaling, GLideN64 game fixes (depth compare, framebuffer emulation, shader caching), CPU recompiler choice, and Controller Pak support (Memory / Rumble / Transfer).",
+    "v107_item_5": "New — Wii/GameCube tuning: 23 real Dolphin options (EFB scale wired to the app's Resolution setting, async shader compilation, texture cache accuracy, CPU cores, DSP HLE…).",
+    "v107_item_6": "Fixed — Wii/GameCube crash on startup and the black-screen picture: the native renderer now survives 0x0 framebuffer geometry and rebuilds its buffers from the first presented frame — verified running with audio and controls on device.",
+    "v107_item_7": "Improved — ROM scanner: ISO header sniffing for PS2/Wii/PSP dumps, Sony serial detection (SLUS/SCES…), ZSO and cue+bin classification, and folder-based PS2 hints — misfiled discs heal automatically.",
+    "v107_item_8": "Improved — library redesigned as a 3D coverflow with white accents, instant search fixes and letter covers; home screen rebuilt with Alekfull-NX style tiles and per-system background art; fullscreen notch/cutout fixes and an N64 C-pad fix.",
+    "v107_item_9": "Updated — version information to v1.0.7 (build 8); download files updated.",
     // v1.0.5 release notes
     "v105_title": "v1.0.5 — Real Per-Core Options & Live Tuning",
-    "v105_date": "Current Release",
+    "v105_date": "Previous Release",
     "v105_item_1": "New — real per-core options in Settings > Systems & Cores: authentic libretro variables for mGBA (GBA), Genesis Plus GX, FCEUmm (NES), Snes9x (SNES), Stella (Atari 2600) and ProSystem (Atari 7800), copied verbatim from each bundled core.",
     "v105_item_2": "New — 68 real core options: color palettes, NTSC/TV signal filters, HD Mode 7, SuperFX and CPU overclocking, region control, audio mixing, phosphor CRT effects, Game Genie / Lock-On cartridges and more.",
     "v105_item_3": "New — live tuning: options marked live apply instantly to the running game without a restart; options that need a reload are clearly badged.",
@@ -201,10 +213,10 @@ window.translations = {
     "lang_switch_label": "English",
 
     // Hero Section
-    "hero_tag": "الإصدار الرسمي Octo Black v1.0.5",
+    "hero_tag": "الإصدار الرسمي Octo Black v1.0.7",
     "hero_title": "عالم الألعاب الكلاسيكية. في تجربة واحدة.",
     "hero_desc": "جمع مجموعتك الكلاسيكية في مكان واحد مع Octo Black، تجربة محاكاة شاملة وموحدة لنظام أندرويد مدعومة بنوى Libretro عالية الأداء.",
-    "hero_btn_download": "تنزيل Octo Black v1.0.5",
+    "hero_btn_download": "تنزيل Octo Black v1.0.7",
     "hero_btn_explore": "استكشف المميزات",
 
     // Home Features Overview
@@ -221,7 +233,7 @@ window.translations = {
     "feat_5_title": "تحميل الألعاب",
     "feat_5_desc": "جديد في v1.0.4 — تصفّح مجموعات ألعاب مختارة حسب الجهاز داخل الإعدادات؛ وكل مجموعة تُفتح في متصفحك الخارجي، دون تضمين أي ملفات داخل التطبيق.",
     "feat_6_title": "خيارات نوى حقيقية",
-    "feat_6_desc": "جديد في v1.0.5 — 68 خياراً أصلياً من Libretro لـ GBA وGenesis وNES وSNES وAtari (الإعدادات > الأنظمة والنوى): لوحات ألوان، مرشحات تلفاز، HD Mode 7، رفع سرعة المعالج والمزيد — تُطبق فوراً أثناء اللعب.",
+    "feat_6_desc": "أكثر من 200 خيار أصلي من Libretro عبر 11 نظاماً (الإعدادات > الأنظمة والنوى): المُصيّرات، مرشحات الإكساءات، HD Mode 7، رفع السرعة، الشبكة للعب الجماعي وحزم أداء/متوازن/جودة بضغطة واحدة.",
 
     // Systems Section
     "home_systems_title": "الأنظمة الكلاسيكية المدعومة",
@@ -241,9 +253,9 @@ window.translations = {
 
     // Download Section
     "home_dl_title": "جاهز لاستعادة ذكريات الألعاب؟",
-    "home_dl_desc": "حمل تطبيق Octo Black الإصدار 1.0.5 لنظام أندرويد (ARM64). مجاني، خفيف الوزن ومعد جاهزاً للتشغيل المباشر.",
+    "home_dl_desc": "حمل تطبيق Octo Black الإصدار 1.0.7 لنظام أندرويد (ARM64). مجاني، خفيف الوزن ومعد جاهزاً للتشغيل المباشر.",
     "dl_status_label": "حالة الإصدار على GitHub:",
-    "dl_status_active": "v1.0.5 متاح للتنزيل",
+    "dl_status_active": "v1.0.7 متاح للتنزيل",
     "dl_req_title": "متطلبات التشغيل:",
     "dl_req_desc": "نظام أندرويد 8.0 (Oreo) أو أعلى • معالج 64-bit ARM (arm64-v8a)",
 
@@ -262,12 +274,12 @@ window.translations = {
     // Download Page Detailed
     "page_dl_title": "التنزيل الرسمي",
     "page_dl_subtitle": "احصل على أحدث نسخة رسمية من تطبيق Octo Black مباشرة من إصدارات GitHub.",
-    "dl_card_version": "الإصدار 1.0.5 (البنية 6)",
+    "dl_card_version": "الإصدار 1.0.7 (البنية 8)",
     "dl_card_date": "تاريخ النشر: الإصدار المستقر الرسمي",
     "dl_card_arch": "المعمارية: arm64-v8a",
-    "dl_card_btn": "تنزيل ملف Octo Black v1.0.5 APK",
+    "dl_card_btn": "تنزيل ملف Octo Black v1.0.7 APK",
     "dl_install_guide_title": "طريقة التثبيت على الأندرويد",
-    "step_1": "1. قم بتنزيل ملف octo-black-1.0.5v-arm64-v8a.apk على جهازك.",
+    "step_1": "1. قم بتنزيل ملف octo-black-1.0.7v-arm64-v8a.apk على جهازك.",
     "step_2": "2. افتح الملف المُنزل باستخدام مدير الملفات أو المتصفح.",
     "step_3": "3. اسمح بالتثبيت من مصادر غير معروفة إذا طلب منك نظام الأندرويد.",
     "step_4": "4. افتح Octo Black وامنحه صلاحية التخزين لفحص ألعابك.",
@@ -326,9 +338,21 @@ window.translations = {
     "v104_item_6": "تحسين — إزالة سجلات التشخيص المتبقية من مسارات الفيديو والإدخال الأصلية لجلسات لعب أنظف.",
     "v104_item_7": "تحديث — معلومات الإصدار وملفات التنزيل إلى v1.0.4 (البنية 5).",
 
+    // ملاحظات إصدار v1.0.7
+    "v107_title": "v1.0.7 — التحديث الكبير للنوى: خيارات وحزم ولعب جماعي",
+    "v107_date": "الإصدار الحالي",
+    "v107_item_1": "جديد — دعم بلايستيشن 2 عبر نواة PCEE2 بتجديد جذري: مُصيّر حقيقي (Vulkan / OpenGL / برمجي)، 26 خياراً أصلياً (ترشيح الإكساءات والمثلثي، mipmapping، dithering، FXAA، دقة الاختلاط، مخزن الصوت، MTVU…)، رقع الشاشة العريضة مفعّلة افتراضياً، وطبقة تحكم DualShock 2 مخصصة.",
+    "v107_item_2": "جديد — حزم الجودة: أوضاع أداء/متوازن/جودة بضغطة واحدة لـPS2 وWii/GameCube وPSP وN64، مع إبراز الحزمة النشطة دون تجاوز اختياراتك اليدوية.",
+    "v107_item_3": "جديد — ضبط عميق لـPSP: 42 خياراً حقيقياً (نواة المعالج، توقيت I/O، الإطارات المخزّنة، ترقية الإكساءات xBRZ، ترشيح الإكساءات، MSAA، نقطة ميتة وحساسية العصا، طراز PSP، بطاقة الذاكرة) ومجموعة كاملة للعب الجماعي عبر الشبكة — WLAN وخادم PRO Ad-Hoc المدمج للشبكة المحلية وخوادم الإنترنت العامة وفتح المنافذ UPnP.",
+    "v107_item_4": "جديد — ضبط عميق لـNintendo 64: 40 خياراً حقيقياً تشمل مُصيّر ParaLLEl-RDP مع ترقية 1x–8x، إصلاحات GLideN64 للألعاب (مقارنة العمق، محاكاة الفريمبفر، كاش الشيدرات)، اختيار مُعيد تجميع المعالج، ودعم حزم التحكم (ذاكرة/اهتزاز/نقل).",
+    "v107_item_5": "جديد — ضبط Wii/GameCube: 23 خياراً حقيقياً من Dolphin (مقياس EFB موصول بإعداد الدقة، ترجمة شيدرات غير متزامنة، دقة كاش الإكساءات، نوى المعالج، DSP HLE…).",
+    "v107_item_6": "إصلاح — انهيار Wii/GameCube عند التشغيل والشاشة السوداء: المُصيّر الأصلي يصمد الآن أمام أبعاد إطار 0x0 ويعيد بناء مخازنه من أول إطار حقيقي — تم التحقق من التشغيل بالصوت والتحكم على الجهاز.",
+    "v107_item_7": "تحسين — قارئ ROM: تفتيش ترويسة ملفات ISO لألعاب PS2/Wii/PSP، كشف أرقام سونيا التسلسلية (SLUS/SCES…)، تصنيف ZSO وcue+bin، وتلميحات مجلد PS2 — الأقراص الخاطئة التصنيف تُصلح تلقائياً.",
+    "v107_item_8": "تحسين — مكتبة الألعاب أعيد تصميمها كتدفق أغلفة ثلاثي الأبعاد بلمسات بيضاء وإصلاح البحث الفوري وأغلفة الحروف؛ الشاشة الرئيسية أعيد بناؤها ببلاطات بأسلوب Alekfull-NX وخلفيات لكل نظام؛ إصلاح قص الشاشة للنوافذ المقطوعة وإصلاح زر C لـN64.",
+    "v107_item_9": "تحديث — معلومات الإصدار إلى v1.0.7 (البنية 8) وملفات التنزيل.",
     // ملاحظات إصدار v1.0.5
     "v105_title": "v1.0.5 — خيارات نوى حقيقية وضبط فوري",
-    "v105_date": "الإصدار الحالي",
+    "v105_date": "إصدار سابق",
     "v105_item_1": "جديد — خيارات نوى حقيقية في الإعدادات > الأنظمة والنوى: متغيرات Libretro الأصلية لـ mGBA (GBA) وGenesis Plus GX وFCEUmm (NES) وSnes9x (SNES) وStella (Atari 2600) وProSystem (Atari 7800)، منسوخة حرفياً من كل نواة مضمنة.",
     "v105_item_2": "جديد — 68 خيار نواة حقيقي: لوحات ألوان، مرشحات إشارة NTSC/التلفاز، HD Mode 7، رفع سرعة SuperFX والمعالج، التحكم بالمنطقة، مزج الصوت، تأثيرات فسفرة CRT، كارتريدات Game Genie / Lock-On والمزيد.",
     "v105_item_3": "جديد — ضبط فوري: الخيارات المميزة بالتطبيق الفوري تُطبق أثناء اللعب دون إعادة تشغيل؛ وما يحتاج إعادة فتح يظهر بشارة واضحة.",
