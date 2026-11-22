@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!--
+    OctoBlack app icon (source, Phase 4D.68).
+    Monochrome identity: black badge, white octopus bell whose skirt forms
+    five tentacle tongues, with a D-pad and two face buttons cut in black so
+    the octopus reads as a game controller. Pure vector — rasterize to
+    512/192/144/96/72/48 px PNG for the launcher mipmaps.
+  -->
+  <rect x="16" y="16" width="480" height="480" rx="112" fill="#000000"/>
+  <rect x="34" y="34" width="444" height="444" rx="94" fill="none" stroke="#FFFFFF" stroke-opacity="0.14" stroke-width="4"/>
+
+  <!-- Octopus bell: dome head + flared sides + five scalloped tentacle tongues -->
+  <path fill="#FFFFFF" d="
+    M 124 296
+    C 124 224 184 176 256 176
+    C 328 176 388 224 388 296
+    C 392 316 398 328 404 340
+    A 29.6 54 0 0 1 344.8 340
+    A 29.6 42 0 0 1 285.6 340
+    A 29.6 46 0 0 1 226.4 340
+    A 29.6 42 0 0 1 167.2 340
+    A 29.6 54 0 0 1 108 340
+    C 114 328 120 314 124 296
+    Z"/>
+
+  <!-- Eyes -->
+  <circle cx="218" cy="240" r="17" fill="#000000"/>
+  <circle cx="294" cy="240" r="17" fill="#000000"/>
+
+  <!-- D-pad -->
+  <path fill="#000000" d="
+    M 189 290 L 203 290 L 203 305 L 218 305 L 218 319
+    L 203 319 L 203 334 L 189 334 L 189 319 L 174 319
+    L 174 305 L 189 305 Z"/>
+
+  <!-- Face buttons -->
+  <circle cx="316" cy="298" r="15" fill="#000000"/>
+  <circle cx="350" cy="320" r="15" fill="#000000"/>
+</svg>

@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 160" width="740" height="160">
+  <!--
+    OctoBlack horizontal lockup (Phase 4D.68). Transparent background —
+    the wordmark is white, so place it on dark surfaces (the site header,
+    splash, About card). "OCTO" solid + "BLACK" solid keeps the mark legible
+    at any size; the tagline is letter-spaced white at 60% opacity.
+  -->
+  <g transform="translate(16,0) scale(0.3125)">
+    <!-- Octopus mark (same geometry as octoblack-icon.svg, no badge) -->
+    <path fill="#FFFFFF" d="
+      M 124 296
+      C 124 224 184 176 256 176
+      C 328 176 388 224 388 296
+      C 392 316 398 328 404 340
+      A 29.6 54 0 0 1 344.8 340
+      A 29.6 42 0 0 1 285.6 340
+      A 29.6 46 0 0 1 226.4 340
+      A 29.6 42 0 0 1 167.2 340
+      A 29.6 54 0 0 1 108 340
+      C 114 328 120 314 124 296
+      Z"/>
+    <circle cx="218" cy="240" r="17" fill="#000000"/>
+    <circle cx="294" cy="240" r="17" fill="#000000"/>
+    <path fill="#000000" d="
+      M 189 290 L 203 290 L 203 305 L 218 305 L 218 319
+      L 203 319 L 203 334 L 189 334 L 189 319 L 174 319
+      L 174 305 L 189 305 Z"/>
+    <circle cx="316" cy="298" r="15" fill="#000000"/>
+    <circle cx="350" cy="320" r="15" fill="#000000"/>
+  </g>
+
+  <text x="206" y="90"
+        font-family="'Arial Black', 'Segoe UI Black', Arial, Helvetica, sans-serif"
+        font-weight="900" font-size="64" letter-spacing="3" fill="#FFFFFF">OCTOBLACK</text>
+  <text x="208" y="126"
+        font-family="Arial, Helvetica, sans-serif"
+        font-weight="700" font-size="17" letter-spacing="7.5" fill="#FFFFFF"
+        fill-opacity="0.6">RETRO GAME EMULATOR</text>
+</svg>
